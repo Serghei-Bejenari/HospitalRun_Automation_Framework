@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Custom Logger Suite">
+    <listeners>
+        <listener class-name="hospitalRun.utils.CustomLogger"/>
+    </listeners>
+    <test name="/src/test/java/hospitalRun/tests">
+        <classes>
+            <class name="hospitalRun.tests.Tests">
+                <methods>
+                    <include name="logInTest"/>
+                    <include name="logInTestNegative"/>
+                    <include name="logOutTest"/>
+                    <include name="medicationRequestTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
